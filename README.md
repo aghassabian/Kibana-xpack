@@ -6,7 +6,7 @@ To run directly on host using ```docker run``` command, should set exposed ports
 ```bash
 docker run -itd --name kibana -p 5601:5601 aghassabian/kibana-xpack
 ```
-# run using Ansible
+# Run using Ansible
 To run using Ansible add the following section to ansible role or playbook:
 ```yaml
 
@@ -20,4 +20,4 @@ To run using Ansible add the following section to ansible role or playbook:
     ports:
       - "5601:5601"
 ```
-elastic network should have already been created.
+elastic network should have already been created and defined as variable or could be insert directly in network part.
